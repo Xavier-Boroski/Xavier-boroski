@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Xavier Boroski | Portfolio</title>
+<title>Xavier Boroski | Portfolio</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
+<style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333333;
-            background-color: #f4f6f8;
+            color: #222;
+            background-color: #f4f4f4;
         }
 
         nav {
-            background-color: #1b365d;
+            background-color: #172a46;
             padding: 15px;
             text-align: center;
         }
 
         nav a {
             color: white;
+            margin: 0 12px;
             text-decoration: none;
-            margin: 8px 15px;
             font-weight: bold;
-            display: inline-block;
         }
 
         nav a:hover {
-            color: #ffb81c;
+            color: #ffcc33;
         }
 
         header {
-            background-color: #1b365d;
+            background-color: #172a46;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
@@ -51,36 +46,35 @@
         }
 
         header h2 {
-            margin: 10px 0 5px;
-            color: #ffb81c;
+            color: #ffcc33;
+            margin: 10px 0;
         }
 
         header p {
             margin: 0;
-            font-size: 18px;
         }
 
         main {
-            width: 90%;
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
+            padding: 20px;
         }
 
         section {
             background-color: white;
-            margin: 30px 0;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
-            color: #1b365d;
-            border-bottom: 3px solid #ffb81c;
+            color: #172a46;
+            border-bottom: 3px solid #ffcc33;
             padding-bottom: 8px;
         }
 
-        .skills-list {
+        .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -88,64 +82,47 @@
             list-style: none;
         }
 
-        .skills-list li {
-            background-color: #e8eef6;
-            color: #1b365d;
-            padding: 8px 14px;
-            border-radius: 20px;
+        .skills li {
+            background-color: #e8edf4;
+            padding: 8px 12px;
+            border-radius: 15px;
         }
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+        .project {
+            background-color: #f4f4f4;
+            border-left: 5px solid #ffcc33;
+            padding: 15px;
+            margin: 15px 0;
         }
 
-        .project-card {
-            background-color: #f4f6f8;
-            padding: 20px;
-            border-left: 5px solid #ffb81c;
-            border-radius: 6px;
-        }
-
-        .project-card h3 {
-            color: #1b365d;
+        .project h3 {
+            color: #172a46;
             margin-top: 0;
         }
 
-        .contact-link {
-            color: #1b365d;
-            font-weight: bold;
+        a {
+            color: #174f91;
         }
 
         footer {
-            background-color: #1b365d;
+            background-color: #172a46;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 15px;
         }
 
-        @media (max-width: 700px) {
-            header {
-                padding: 45px 15px;
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
             }
 
             header h1 {
                 font-size: 32px;
             }
 
-            nav a {
-                display: block;
-                margin: 10px;
-            }
-
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 20px;
+            main {
+                padding: 10px;
             }
         }
     </style>
@@ -153,52 +130,51 @@
 
 <body>
 
-    <nav>
-        <a href="#about">About Me</a>
+<nav>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <header>
+<header>
         <h1>Xavier Boroski</h1>
         <h2>Marketing Student</h2>
         <p>University of Utah</p>
     </header>
 
-    <main>
-        <section id="about">
+<main>
+
+<section id="about">
             <h2>About Me</h2>
-            <p>
+
+<p>
                 I am a marketing major at the University of Utah with an emphasis
                 in sales. My career goal is to become a marketing director, where
                 I can lead teams, develop creative campaigns, build strong customer
-                relationships, and help businesses grow. I am especially interested
-                in how artificial intelligence can improve marketing through
-                automation, personalized advertising, customer analysis, and better
-                decision-making. My technical interests include data analytics,
-                Excel, information systems, website development, and digital tools
-                that support marketing and sales.
+                relationships, and help businesses grow. I am interested in how AI
+                can improve marketing through automation, personalized advertising,
+                customer analysis, and better decision-making. My technical interests
+                include data analytics, Excel, information systems, website
+                development, and digital marketing tools.
             </p>
         </section>
 
-        <section id="skills">
+<section id="skills">
             <h2>Skills</h2>
 
-            <ul class="skills-list">
+<ul class="skills">
                 <li>Sales and Marketing</li>
-                <li>Market Analysis</li>
-                <li>Customer Relationship Management</li>
-                <li>Hiring and Interviewing</li>
                 <li>Leadership</li>
                 <li>Team Training</li>
                 <li>Sales Coaching</li>
-                <li>Communication</li>
+                <li>Hiring and Interviewing</li>
                 <li>Customer Service</li>
-                <li>Conflict Resolution</li>
-                <li>Adaptability</li>
+                <li>Communication</li>
+                <li>Market Analysis</li>
                 <li>Microsoft Excel</li>
+                <li>Data Analysis</li>
                 <li>ChatGPT</li>
                 <li>Google Gemini</li>
                 <li>Canva</li>
@@ -207,83 +183,78 @@
             </ul>
         </section>
 
-        <section id="projects">
+<section id="projects">
             <h2>Projects</h2>
 
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Marketing Campaign Analysis</h3>
-                    <p>
-                        Used Excel and ChatGPT to analyze campaign data and
-                        compare brand performance.
-                    </p>
-                </div>
+<div class="project">
+                <h3>Marketing Campaign Analysis</h3>
+                <p>
+                    Used Excel and ChatGPT to analyze marketing data and compare
+                    the campaign performance of two brands.
+                </p>
+            </div>
 
-                <div class="project-card">
-                    <h3>Sales Training and Leadership</h3>
-                    <p>
-                        Trained and coached client representatives on sales skills,
-                        team goals, and customer relationships.
-                    </p>
-                </div>
+<div class="project">
+                <h3>Sales Training and Leadership</h3>
+                <p>
+                    Trained and coached client representatives on sales skills,
+                    personal goals, team goals, and customer relationships.
+                </p>
+            </div>
 
-                <div class="project-card">
-                    <h3>Video Production and Editing</h3>
-                    <p>
-                        Created and edited video projects using Adobe Premiere Pro
-                        and CapCut.
-                    </p>
-                </div>
+<div class="project">
+                <h3>Video Production and Editing</h3>
+                <p>
+                    Created and edited video projects using Adobe Premiere Pro,
+                    CapCut, and other digital tools.
+                </p>
+            </div>
 
-                <div class="project-card">
-                    <h3>GitHub Portfolio Website</h3>
-                    <p>
-                        Built and published a professional portfolio website using
-                        HTML, CSS, and GitHub Pages.
-                    </p>
-                </div>
+<div class="project">
+                <h3>GitHub Portfolio Website</h3>
+                <p>
+                    Built and published this professional portfolio using HTML,
+                    CSS, GitHub, and GitHub Pages.
+                </p>
             </div>
         </section>
 
-        <section id="resume">
+<section id="resume">
             <h2>Resume</h2>
             <p>Updated resume coming soon.</p>
         </section>
 
-        <section id="contact">
+<section id="contact">
             <h2>Contact</h2>
 
-            <p>
+<p>
                 Email:
-                <a class="contact-link" href="mailto:u1449141@utah.edu">
+                <a href="mailto:u1449141@utah.edu">
                     u1449141@utah.edu
                 </a>
             </p>
 
-            <p>
+<p>
                 LinkedIn:
-                <a class="contact-link"
-                   href="https://www.linkedin.com/in/xavier-boroski/"
-                   target="_blank">
-                    Xavier Boroski
+                <a href="https://www.linkedin.com/in/xavier-boroski/" target="_blank">
+                    View My LinkedIn Profile
                 </a>
             </p>
 
-            <p>
+<p>
                 GitHub:
-                <a class="contact-link"
-                   href="https://github.com/YOUR-USERNAME"
-                   target="_blank">
+                <a href="https://github.com/" target="_blank">
                     View My GitHub Profile
                 </a>
             </p>
         </section>
-    </main>
 
-    <footer>
+</main>
+
+<footer>
         <p>&copy; 2026 Xavier Boroski</p>
     </footer>
 
 </body>
-</html>
 
+</html>
